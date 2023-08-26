@@ -1,0 +1,244 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #25649e;
+
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+  font-weight:900;
+}
+h1, h2 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* Styling for form sections */
+section {
+  margin-bottom: 20px;
+}
+
+/* Styling for CNIC input */
+input[type="text"][name="cnic"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling for gender radio buttons */
+input[type="radio"][name="gender"] {
+  margin-right: 10px;
+}
+
+/* Styling for province select */
+select[name="province"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling for phone inputs */
+input[type="tel"][name="phoneres"],
+input[type="tel"][name="mobile"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling for address textarea */
+textarea[name="address"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling for gender container */
+.gender-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Styling for gender radio buttons */
+input[type="radio"][name="gender"] {
+  margin-right: 5px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #25649e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn{
+  color: #25649e;
+}
+
+/* CNIC Section */
+.cnic-input {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cnic-input input[type="text"] {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.cnic-input span {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+/* Domicile Section */
+select[name="domicile"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right center / 20px 20px;
+}
+
+/* Scrollbar for dropdown */
+select[name="domicile"]::-webkit-scrollbar {
+  width: 8px;
+}
+
+select[name="domicile"]::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for program search bar */
+#program-search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styling for program dropdown */
+select#program {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right center / 20px 20px;
+}
+
+/* Scrollbar for program dropdown */
+select#program::-webkit-scrollbar {
+  width: 8px;
+}
+
+select#program::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for attachments section */
+#attachments label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#attachments input[type="file"] {
+  display: block;
+  margin-bottom: 15px;
+}
+
+
+/* Styling for important instructions section */
+#important-instructions {
+  margin-bottom: 30px;
+}
+
+#important-instructions h2 {
+  color: #333;
+}
+
+#important-instructions ol {
+  padding-left: 20px;
+}
+
+#important-instructions li {
+  margin-bottom: 10px;
+}
+/*Styling for the save progress button */
+.save-progress-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+

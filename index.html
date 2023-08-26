@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Application Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <div class="container">
+    <h1>Student Application Form</h1>
+    <section id="important-instructions">
+      <h2>Important Instructions:</h2>
+      <ol>
+        <li>Attach a copy of Matric Certificate for the issuance of Original Degree. DMC is not accepted.</li>
+        <li>Attach a copy of BUITEMS Registration Card.</li>
+        <li>Attach a copy of Clearance Certificate.</li>
+        <li>Attach a copy of C.N.I.C.</li>
+        <li>Attach a recent Passport Size Photograph.</li>
+        <li>Attach Bank Challan.</li>
+        <li>Attach copies of Degree/Transcript if prior received.</li>
+      </ol>
+    </section>
+  <div class="form-group">
+    <form id="application-form">
+<section id="personal-info">
+    <h2>Personal Information</h2>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+    
+    <label for="fathername">Father's Name:</label>
+    <input type="text" id="fathername" name="fathername" required>
+
+ 
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    
+    <label for="cnic">CNIC:</label>
+<div class="cnic-input">
+  <input type="text" id="cnic1" maxlength="1" required>
+  <input type="text" id="cnic2" maxlength="1" required>
+  <input type="text" id="cnic3" maxlength="1" required>
+  <input type="text" id="cnic4" maxlength="1" required>
+  <input type="text" id="cnic5" maxlength="1" required>
+  <span>-</span>
+  <input type="text" id="cnic6" maxlength="1" required>
+  <input type="text" id="cnic7" maxlength="1" required>
+  <input type="text" id="cnic8" maxlength="1" required>
+  <input type="text" id="cnic9" maxlength="1" required>
+  <input type="text" id="cnic10" maxlength="1" required>
+  <input type="text" id="cnic11" maxlength="1" required>
+  <input type="text" id="cnic12" maxlength="1" required>
+  <span>-</span>
+  <input type="text" id="cnic13" maxlength="1" required>
+</div>
+
+    
+    <!-- ... Domicile... -->
+
+<label for="domicile">Local/Domicile (District name):</label>
+<select class="form-control" id="domicile" name="domicile" required>
+  <option value="" disabled selected>Select District</option>
+  <option value="Awaran">Awaran</option>
+  <option value="Barkhan">Barkhan</option>
+  <option value="Chagai">Chagai</option>
+  <option value="Chaman">Chaman</option>
+  <option value="Dera Bugti">Dera Bugti</option>
+  <option value="Duki">Duki</option>
+  <option value="Gwadar">Gwadar</option>
+  <option value="Harnai">Harnai</option>
+  <option value="Hub">Hub</option>
+  <option value="Jafarabad">Jafarabad</option>
+  <option value="Jhal Magsi">Jhal Magsi</option>
+  <option value="Kalat">Kalat</option>
+  <option value="Kech">Kech</option>
+  <option value="Kharan">Kharan</option>
+  <option value="Kachhi">Kachhi</option>
+  <option value="Khuzdar">Khuzdar</option>
+  <option value="Lasbela">Lasbela</option>
+  <option value="Loralai">Loralai</option>
+  <option value="Mastung">Mastung</option>
+  <option value="Musakhel">Musakhel</option>
+  <option value="Nasirabad">Nasirabad</option>
+  <option value="Nushki">Nushki</option>
+  <option value="Panjgur">Panjgur</option>
+  <option value="Pishin">Pishin</option>
+  <option value="Quetta">Quetta</option>
+  <option value="Sherani">Sherani</option>
+  <option value="Sibi">Sibi</option>
+  <option value="Sohbatpur">Sohbatpur</option>
+  <option value="Surab">Surab</option>
+  <option value="Washuk">Washuk</option>
+  <option value="Zhob">Zhob</option>
+  <option value="Ziarat">Ziarat</option>
+  <option value="Usta Muhammad">Usta Muhammad</option>
+</select>
+
+
+    
+<label>Gender:</label>
+<div class="gender-container">
+  <label for="male">Male</label>
+  <input type="radio" id="male" name="gender" value="male" required>
+  
+  <label for="female">Female</label>
+  <input type="radio" id="female" name="gender" value="female">
+</div>
+    
+    <label for="province">Province:</label>
+    <select class="form-control" id="province" name="province" required>
+      <option value="" disabled selected>Select Province</option>
+      <option value="punjab">Punjab</option>
+      <option value="sindh">Sindh</option>
+      <option value="kpk">Khyber Pakhtunkhwa</option>
+      <option value="balochistan">Balochistan</option>
+      <!-- Add more options as needed -->
+    </select>
+    
+    <label for="phoneres">Phone (Residential):</label>
+    <input type="tel" id="phoneres" name="phoneres">
+    
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" required>
+    
+    <label  for="address">Address:</label>
+    <textarea class="form-control" id="address" name="address" rows="4" required></textarea>
+    
+    <button id="personal-next">Next</button>
+  </section>
+  
+  
+<!-- Section 2: Academic Information     ------>
+
+<section id="academic-info" class="hidden">
+  <h2>Academic Information</h2>
+  <label for="program">Program of Study:</label>
+  <div class="program-search">
+  <select class="form-control" id="program" name="program" required>
+    <option value="" disabled selected>Select Program</option>
+    <option value="Civil Engineering">Civil Engineering</option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Petroleum and Gas Engineering">Petroleum and Gas Engineering</option>
+    <option value="Mechanical Engineering">Mechanical Engineering</option>
+    <option value="Textile Engineering">Textile Engineering</option>
+    <option value="Fashion and Textile Design ">Fashion and Textile Design</option>
+    <option value="Chemical Engineering">Chemical Engineering</option>
+    <option value="Mining Engineering">Mining Engineering</option>
+    <option value="Geological Engineering">Geological Engineering</option>
+    <option value="B. Architecture">B. Architecture</option>
+    <option value="Computer Engineering">Computer Engineering</option>
+    <option value="Software Engineering">Software Engineering</option>
+    <option value="Telecommunication Engineering">Telecommunication Engineering</option>
+    <option value="Information Technology">Information Technology</option>
+    <option value="Biotechnology">Biotechnology</option>
+    <option value="Environmental Science">Environmental Science</option>
+    <option value="Microbiology">Microbiology</option>
+    <option value="BS Business Administration">BS Business Administration</option>
+    <option value="BS Economics">BS Economics</option>
+    <option value="BS Public Administration">BS Public Administration</option>
+    <option value="BS Education">BS Education</option>
+    <option value="BS English">BS English</option>
+    <option value="BS Fine Arts">BS Fine Arts</option>
+    <option value="BS International Relations">BS International Relations</option>
+    <option value="BS Mass Communication">BS Mass Communication</option>
+    <option value="BS Psychology">BS Psychology</option>
+    <option value="BS Sociology">BS Sociology</option>
+    <option value="BS Chemistry">BS Chemistry</option>
+    <option value="BS Mathematics">BS Mathematics</option>
+    <option value="BS Physics">BS Physics</option>
+    <option value="Electrical Engineering">Electrical Engineering</option>
+      <option value="Mechanical Engineering">Mechanical Engineering</option>
+  </select>
+</div>
+      
+    <label for="batch">Batch:</label>
+    <input type="text" id="batch" name="batch" required>
+    
+    <label for="semester">Semester:</label>
+    <input type="text" id="semester" name="semester" required>
+    
+    <label for="cmsid">CMS ID/Enrollment No:</label>
+    <input type="text" id="cmsid" name="cmsid" required>
+    
+    <label for="buitemsreg">BUITEMS Registration No:</label>
+    <input type="text" id="buitemsreg" name="buitemsreg" required>
+    
+    <button id="academic-next">Next</button>
+  </section>
+<!-- Documents Section  -->
+  <section id="attachments" class="hidden">
+    <h2>Attachments</h2>
+    <label class="form-control-file"for="matric-certificate">Matric Certificate:</label>
+    <input class="form-control-file" type="file" id="matric-certificate" name="matric-certificate" accept=".pdf, .jpg, .png" required>
+  
+    <label for="registration-card">Registration Card:</label>
+    <input class="form-control-file" type="file" id="registration-card" name="registration-card" accept=".pdf, .jpg, .png" required>
+  
+    <label for="clearance-certificate">Clearance Certificate:</label>
+    <input class="form-control-file" type="file" id="clearance-certificate" name="clearance-certificate" accept=".pdf, .jpg, .png" required>
+  
+    <label for="cnic-document">CNIC:</label>
+    <input class="form-control-file" type="file" id="cnic-document" name="cnic-document" accept=".pdf, .jpg, .png" required>
+  
+    <label for="photograph">Photograph:</label>
+    <input class="form-control-file" type="file" id="photograph" name="photograph" accept=".jpg, .png" required>
+  
+    <label for="custom-document">Custom Document (if required):</label>
+    <input class="form-control-file" type="file" id="custom-document" name="custom-document">
+  
+  </section>
+  
+  
+  <button id="save-progress" class="save-progress-button">Save Progress</button>
+  <button class="btn btn-primary btn-sm" id="submit-btn" class="hidden">Submit</button>
+    </form>
+</div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
